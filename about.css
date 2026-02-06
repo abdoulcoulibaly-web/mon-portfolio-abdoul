@@ -43,7 +43,7 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     color: black;
-    font-weight: 500;
+    font-weight:bold;
     padding-bottom: 5px;
 }
 
@@ -53,14 +53,14 @@ nav a:hover {
 }
 
 
-.pro {
+.box-pro {
     width: 80%;
     background-color: white;
     margin: 100px auto;
     padding: 40px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     border-radius: 20px;
-}
+} 
 
 
 .texteapropo {
@@ -77,6 +77,7 @@ nav a:hover {
     border-radius: 20px;
     margin-bottom: 50px;
 }
+ 
 
 .image-pro img {
     width: 100%;
@@ -85,12 +86,12 @@ nav a:hover {
 }
 
 
-.icones h1 {
+.contact h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.icones h1 span {
+.contact h1 span {
     color: blue;
 }
 
@@ -117,60 +118,55 @@ nav a:hover {
 
 .lien ul li a img:hover {
     transform: scale(1.2);
+    
 }
 
 
 footer {
     width: 100%;
     height: 56px;
-    background-color: #333;
+    background-color: #333; 
     color: white;
     text-align: center;
     line-height: 56px;
     margin-top: 100px;
 }
 
-
-
+/* =======================
+   MODE TELEPHONE
+   ======================= */
 @media screen and (max-width: 768px) {
+
     header {
-        display: flex; 
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center; 
+        flex-direction: column;
         height: auto;
-        width: 100%; 
-        padding: 15px 20px;
-        background-color: white; 
+        padding: 15px;
+        text-align: center;
     }
 
     nav ul {
-        display: flex;
-        flex-direction: row; 
-        gap: 15px;
-        margin-top: 0; 
-        list-style: none; 
-    }   
-    .pro {
-        width: 95%;
-        margin: 30px auto;
-        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .box-pro {
+        width: 90%;
+        margin: 40px auto;
+        padding: 25px;
     }
 
     .image-pro {
-        height: 300px;
+        height: auto;
     }
 
-    .texteapropo {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .icones h1 {
-        font-size: 22px;
+    .image-pro img {
+        height: auto;
     }
 
     .lien ul {
         gap: 25px;
     }
 }
+
+
